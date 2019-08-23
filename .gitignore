@@ -1,0 +1,4 @@
+_INDEX/
+*.sw[a-z]
+__pycache__/
+*.pyc
