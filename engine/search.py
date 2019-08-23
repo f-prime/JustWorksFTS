@@ -16,7 +16,7 @@ def search(text):
     else:
         possible = full_text_index(text)
         for index in possible:
-            check = hashlib.md5(text.encode()).hexdigest()
+            check = hashlib.md5(index.encode()).hexdigest()
             if os.path.exists(os.path.join("_INDEX", check)):
                 with open(os.path.join("_INDEX", check)) as f:
                     return json.load(f)
